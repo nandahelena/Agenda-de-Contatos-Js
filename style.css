@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-geral{
+    width: 35rem;
+    height: 50rem;
+    border-radius: 0.3rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+input{
+    padding: 0.8rem 1rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+    border: 1px solid grey
+}
+
+#buttonSubmit{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(74, 136, 252);
+    color: white;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#buttonSubmit:hover{
+    background-color: rgb(38, 107, 236);
+}
+
+.contatos-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+h3, p{
+    margin: 11px;
+}
+
+.contato{
+    background-color: rgb(241, 241, 241);
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#deleteBtn{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 0.5rem;
+}
+
+#deleteBtn:hover{
+    background-color: rgb(255, 0, 0, 0.7);
+}
+
+#editBtn{
+    background-color: rgb(81, 104, 240);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 0.5rem;
+}
+
+#editBtn:hover{
+    background-color: rgb(81, 104, 240, 0.7);
+}
+
+@media (min-width: 768px){
+    .container-geral{
+        width: 90vw;
+        height: 90vh;
+    }
+
+    input{
+        width: 35rem;
+    }
+    
+    #buttonSubmit{
+        padding: 15px 200px;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: rgb(74, 136, 252);
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+    }
+}
+
+@media (min-width: 1024px){
+    .container-geral{
+        width: 55vw;
+        height: 90vh;
+    }
+
+    input{
+        width: 30rem;
+    }
+    
+    #buttonSubmit{
+        padding: 15px 100px;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: rgb(74, 136, 252);
+        color: white;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+}
